@@ -8,7 +8,7 @@ const Discord = require("discord.js")
     module.exports.execute = async (bot, message, args) => {
                 message.channel.send("Pinging") .then(m => {
                     const ping = m.createdTimestamp - createdTimestamp
-                    const choices = ["H-How was it?", "P-Please be good...", "I-I hope it isn't bad!"]
+                    const choices = ["1", "2", "3"]
                     const response = choices[Math.floor(math.Random() * choices.length)]
 
                     m.edit(`${response}: Bot Latency: ${ping}, API Latency: ${Math.round(bot.ping)}`)
