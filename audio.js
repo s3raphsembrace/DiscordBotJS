@@ -1,5 +1,3 @@
-
-
 module.exports = {
     name: 'play',
     aliases: ['skip', 'stop'],
